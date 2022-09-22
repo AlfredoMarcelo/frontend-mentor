@@ -1,0 +1,44 @@
+
+
+
+#contenedor{
+    width: 100%;
+    height: 800px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor.card{
+    width: 45%;
+    height: 600px;
+    background-color: rgb(194, 122, 122);
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 5px;
+    border-radius: 20px;
+}
+
+
+
+.card{
+    width: 50%;
+    background-color: brown;
+}
+
+.card.card-image{
+    background-color: cadetblue;
+    
+}
+.card.card-body{
+    background-color: aquamarine;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 800px;
+    min-height: 600px;
+    margin: 80px auto;
+    border: 3px solid black;
+    display:flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-direction: row; */
+    /* justify-content: space-evenly; */
+    /* justify-content: flex-end|flex-start|center; */
+    /* flex-direction: column; en columna j-c editara en cross-axis */
+    /* align-items: center; */
+    align-items: center;
+
+}
+
+.element{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 100px;
+    background-color: salmon;
+    width: 100px;
+    height: 100px;
+    /* flex-grow: 1; los elementos crecen en proporcion usando el espacio sobrante*/
+    /* flex-shrink: 1; por defecto esta en 1, es lo contrario a flex-grow */
+}
+
+.element1{
+    background-color: crimson;
+    /* align-self: flex-end; para mover un elemento individual, es igual a align-items */
+    align-self: flex-start;
+}   
+.element2{
+    background-color: purple;
+    /* order: -1; para cambiar de posicion en el orden de los elementos */
+}
+.element3{
+    background-color: steelblue;
+}

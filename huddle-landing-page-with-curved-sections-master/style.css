@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    /*para crear variable o custom properties*/
+    --poppins:'Poppins', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+
+    /*Colores primarios*/
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    /*Colores neutros*/
+    --very-dark-Cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+
+
+    --padding-container: 80px 0;
+}
+
+
+body{
+    font-family: var(--open-sans);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /*Overflow para evitar que el texto se desborde, ocultara el texto*/
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    min-height: 100vh;
+    position: relative;
+    --wave-bottom: url('../images/bg-section-top-mobile-1.svg')
+}
+
+.hero__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --padding-container:60px 0 45px;
+
+}
+
+.hero__logo{
+    width: 45%;
+    max-width: 160px;
+}
+
+.hero__huddle{
+    width: 100%;
+    display: block;
+}
+
+.hero__cta{
+    color: var(--light-pink);
+    /*text-decoration: none; para quitar la linea del anchor*/
+    text-decoration: none;
+    border: 2px solid;
+    padding: 6px 16px;
+    border-radius: 30px;
+    /*font-weight: 600; para dar mas grosor al contenido, letra y borde*/
+    font-weight: 600;
+    /* box-shadow: 0 0 1px;para dar sombra al contorno o borde de la caja */
+    box-shadow: 0 0 1px;
+}
+
+.hero__main{
+    text-align: center;
+    color: var(--very-dark-Cyan);
+}
+
+.hero__title{
+    font-family: var(--poppins);
+}
+
+.hero__paragraph{
+    /*un margin solo con altura y lados en auto sirve para centrar*/
+    margin: 16px auto;
+    /*igual se puede usar el width para editar el tamaño del parrafo*/
+    width: 90%;
+    /*line-height: 1.5; es para la separacion entre cada linea de texto*/
+    line-height: 1.5;
+}
+
+.cta{
+    /*boton en block*/
+    display: inline-block;
+    background-color: var(--pink);
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 30px;
+    margin-top: 16px;
+
+}
+
+.hero__picture{
+    margin-top: 80px;
+}
+
+.hero__img{
+    /*ajustando imagen a box*/
+    width: 100%;
+    max-width: 600px;
+    /*margin: 0 auto; para centrar automaticamente*/
+    margin: 0 auto;
+    /*display:block;para evitar el borde de la imagen*/
+    display: block;
+}
+
+.hero__numbers{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    
+    /*gap: para espaciados entre los flex items, se posiciona entre medio*/
+    gap: 60px;
+}
+
+.hero__item{
+    overflow: hidden;
+    /* margin-bottom: 30px; en vez de dar espaciado con mbotom, usar gap */
+}
+
+.hero__number{
+    font-size: 60px;
+}
+
+.hero__icon{
+    /*cuando es block, no cubre todo el row, solo una parte con su tamanio*/
+    display: block;
+}
+
+.wave{
+    position: absolute;
+    /*al agregar width y un heigth en px se puede hacer usar un div sin contenido*/
+    width: 100%;
+    height: 100px;
+    /*background-repeat: no-repeat; para que no se repita la figura o img*/
+    background-repeat: no-repeat;
+    /*background-size: 100% 100px; para que ocupe todo el ancho y no agrande el alto solo 100px*/
+    background-size: 100% 100px;
+}
+
+.wave--bottom{
+    left: 0;
+    bottom: 0;
+    background-image: var(--wave-bottom);
+}
+
+.wave--top{
+    left: 0;
+    top: 0;
+    background-image: var(--wave-top);
+}
+
+.section{
+    background-color: var(--very-pale-blue);
+    --padding-container: 110px 0;
+}
+
+.section__container{
+    display: flex;
+    flex-direction: column;
+}
+
+/*contenedor de tag img*/
+.section__img{
+    /*width:100%: para que la imagen solo rellene el contenedor*/
+    width: 100%;
+    max-width: 350px;
+    /*display: block; para que se puede utilizar lo sobrante del row*/
+    display: block;
+    /*margin:0 auto; para que la img este centrada al agrandar pantalla*/
+    margin: 0 auto;
+}
+.section__texts{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subtitle{
+    margin-bottom: 16px;
+    font-family: var(--poppins)
+}
