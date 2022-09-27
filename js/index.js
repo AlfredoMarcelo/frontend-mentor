@@ -28,12 +28,60 @@ function printInfo(user){
 
 document.body.innerHTML = printInfo(user); */
 
+//Map
+/* const arreglo = [1,2,3,4,5]
+
+const arregloMap = arreglo.map(function(numero){
+    return numero * 2;
+})
+
+console.log(arregloMap) */
 
 
 //FUNCIONES ANONIMAS
 
+/* 
 function start(){
     return 'starting..';
 }
 
-console.log(start());
+const getUser =()=>({id:2536,nombre:"alfredo"});
+
+console.log(getUser());
+
+const getUsuarioActivo = (nombre)=>({id:9099, nombre: nombre});
+const userName = getUsuarioActivo("alfredo Supanta");
+console.log(userName); */
+
+//Desestructuracion de objetos------------------------
+
+/* const persona = {
+    nombre: "tony",
+    apellido: "ferguson",
+    skills:{
+        fuerte: "jiu-jitsu",
+        debilidad: "grapling"
+    }
+}
+
+const {nombre:nombrePeleador} = persona;//cambiando el nombre de la key
+console.log(nombrePeleador)
+
+const retornarPersona = ({nombre, apellido}) =>{//desestructuracion en parametro
+    console.log(nombre + " " + apellido)
+}
+// de esta manera se puede deses.. anidada un doble obj y guardarlos en variables
+const {nombre, apellido,skills:{fuerte,debilidad}} = persona
+
+retornarPersona(persona);
+console.log(debilidad) */
+
+//Desestructuracion de arreglos--------------------------
+
+const personajes = ['Ton', 'Jean', 'Gonza',()=>{console.log("hola")}];
+
+const [p1,,,arr] = personajes;
+console.log(p1);
+arr();
+
+// find busca un solo resulatdo, filter busca mas de uno

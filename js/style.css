@@ -1,0 +1,64 @@
+/*Colores
+primary: #FFF5E4;
+secondary: #FFC4C4;
+stronger: #EE6983;
+morestronger:#850E35;
+*/
+
+:root{
+    --primary: #FFF5E4;
+    --secondary: #FFC4C4;
+    --stronger: #EE6983;
+    --morestronger:#850E35;
+}
+
+header{
+    background-color: var(--primary);
+    text-align: center;
+}
+
+h1{
+    color: var(--morestronger);
+    font-size: 50px;
+}
+
+.paragraph{
+    color: var(--stronger);
+}
+
+.navbar_header{
+    text-align: center;
+}
+.btn-nav{
+    width: 100px;
+    background-color: var(--stronger);
+    color: var(--primary);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-nav:hover{
+    box-shadow: 10px 5px 8px 1px var(--morestronger);
+    transition: .3s;
+}
+table{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background: var(--primary);
+    text-align: center;
+    min-width: 200px;
+}
+.card button{
+    width: 100px;
+    background-color: var(--stronger);
+    color: var(--primary);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px;
+    
+}
