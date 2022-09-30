@@ -1,12 +1,13 @@
 //Para reenderizar app
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {HelloApp, Jugador} from './HelloApp';
+import {HelloApp} from './HelloApp';
+import {FirstApp} from './FirstApp';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <HelloApp/>
-        <Jugador/>
+        <FirstApp/>
     </React.StrictMode>
 )
